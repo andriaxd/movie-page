@@ -1,0 +1,11 @@
+.favorites{ padding:2rem 0 }
+.favorites h2{ text-align:center; font-size:2rem; margin-bottom:1rem }
+
+.favorites-empty{ text-align:center; padding:2.25rem; background:var(--glass); border-radius:var(--radius); margin:1.5rem auto; max-width:720px }
+.favorites-empty h2{ color:#ffb4b4 }
+.favorites-empty p{ color:var(--muted) }
+
+@keyframes fadeIn{ from{ opacity:0; transform:translateY(12px) } to{ opacity:1; transform:none } }
+.movies-grid > *{ animation:fadeIn 0.28s ease-out both }
+.movies-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,300px)); gap:1.25rem; padding:1rem; box-sizing:border-box; max-width:var(--max-width); margin:0 auto; align-items:start; justify-content:center }
+
